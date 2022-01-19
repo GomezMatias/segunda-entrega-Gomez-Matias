@@ -1,0 +1,227 @@
+* {
+
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+#body {
+
+    background-image: url(../img/fondo1.jpg);
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border: 1px solid white
+
+}
+
+#header {
+
+    background-color:#2D3748;
+    border: 2px solid white;
+    background-image: url(../img/filamentos12.jpg);
+    background-position: 107% 45% ;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 1fr;
+    position: sticky;
+    top: 0;
+}
+
+
+#header .seccion__logo {
+
+   width: 200px;
+   height: auto;
+
+}
+
+#header .seccion__logo img:hover {
+     
+    transform: scale(1.1);
+}
+
+#header .header__menu ul {
+    
+    display: flex;
+    
+}
+
+#header .header__menu ul li a:hover {
+
+    background-color: white;
+    color: black;
+  
+}
+
+#header .header__menu ul li a {
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color:#2D3748;
+}
+
+.titulo__principal {
+
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(236, 167, 17);
+    font-size: 35px;
+    border: 2px solid white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: 100px;
+    margin-top: 10px;
+
+}
+
+#formulario {
+
+    background-color: #2D3748;
+    color: white;
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+    
+}
+
+#formulario h4 {
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#formulario .formulario__registro {
+
+    margin: 20px auto;
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+
+}
+
+#formulario .formulario__registro:focus {
+
+    width: 100%;
+}
+
+#formulario .formulario__boton {
+    
+    margin: 8px 10px;
+    padding: 8px 4px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    color: black;
+    width: 1fr;
+    
+}
+
+hr {
+    margin: 10px;
+}
+
+
+
+#footer p {
+
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    padding: 20px 30px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    background-image: url(../img/filamentos12.jpg);
+    background-position: 125% 47% ;
+    background-repeat: no-repeat;
+    background-color: #2D3748;
+
+}
+
+.footer__redes {
+
+    color: white;
+    text-align: center;
+
+}
+
+#footer .footer__redes ul li {
+
+    display: inline;
+    margin: 0 5px;
+    
+}
+#footer .footer__redes ul li a {
+
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 30px 50px;
+    position: relative;
+    bottom: 50px;
+
+}  
+
+@media screen and (max-width: 425px) {
+    #body {
+        border: none;
+    }
+    
+}
+
+@media screen and (max-width: 425px)  {
+
+    .contenedor__global {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+    }
+    
+}
+
+@media screen and (max-width: 425px)  {
+
+    #header {
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+
+    #header .header__menu ul li a {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+

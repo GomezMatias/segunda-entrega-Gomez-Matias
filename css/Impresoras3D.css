@@ -1,0 +1,231 @@
+* {
+
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+#body {
+
+    background-image: url(../img/fondo1.jpg);
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border: 1px solid white
+
+}
+
+#header {
+
+    background-color:#2D3748;
+    border: 2px solid white;
+    background-image: url(../img/filamentos12.jpg);
+    background-position: 107% 45% ;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 1fr;
+    position: sticky;
+    top: 0;
+}
+
+
+#header .seccion__logo {
+
+   width: 200px;
+   height: auto;
+   
+}
+
+#header .seccion__logo img:hover {
+     
+    transform: scale(1.1);
+
+}
+
+#header .header__menu ul {
+    
+    display: flex;
+    
+}
+
+#header .header__menu ul li a:hover {
+
+    background-color: white;
+    color: black;
+  
+}
+
+#header .header__menu ul li a {
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color:#2D3748;
+}
+
+.titulo__principal {
+
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: rgb(236, 167, 17);
+    font-size: 35px;
+    padding: 17px 54px;
+    margin: 21px 28px;
+    border: 2px solid white;
+
+}
+
+.contenedor {
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    width: 1fr;
+    max-width: 1240px;
+    padding: 0 30px;
+    margin: 0 auto;
+    
+}
+
+.contenedor__lista {
+
+    border: 4px double white;
+    border-radius: 10px;
+
+}
+
+.contenedor__lista img {
+
+    margin: 10px auto;
+    display: flex;
+    padding: 0 5px;
+
+}
+
+.contenedor__lista p {
+
+    color: white;
+    text-align: center;
+    margin-top: 18px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+
+}
+
+.compra__boton {
+
+    display: flex;
+    margin: 8px auto;
+    padding: 5px 5px;
+    
+}
+
+#footer p {
+
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    padding: 20px 30px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    background-image: url(../img/filamentos12.jpg);
+    background-position: 125% 47% ;
+    background-repeat: no-repeat;
+    background-color: #2D3748;
+}
+
+.footer__redes {
+
+    color: white;
+    text-align: center;
+}
+
+#footer .footer__redes ul li {
+
+    display: inline;
+    margin: 0 5px;
+    
+}
+
+#footer .footer__redes ul li a {
+
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 30px 50px;
+    position: relative;
+    bottom: 50px;
+
+}
+
+hr {
+
+    margin: 10px;
+    
+}
+
+@media screen and (max-width: 425px) {
+    #body {
+        border: none;
+    }
+    
+}
+
+@media screen and (max-width: 425px)  {
+
+    .contenedor__global {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+    }
+    
+}
+
+@media screen and (max-width: 425px)  {
+
+    #header {
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+
+    #header .header__menu ul li a {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    .contenedor__lista {
+         
+        border: none;
+
+    }
+}
